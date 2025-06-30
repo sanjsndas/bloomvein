@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloomvein Pruning | Premium Plant Care Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary-green: #3a5a40;
+            --secondary-green: #588157;
+            --accent-pink: #e8c8c0;
+            --neutral-tan: #f5ebe0;
+            --dark-brown: #432818;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--neutral-tan);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(58, 90, 64, 0.8), rgba(88, 129, 87, 0.8)), url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2bc4b42a-71b9-4d57-b2cc-6ba279d29268.png') no-repeat center center;
+            background-size: cover;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .price-tag {
+            background-color: var(--accent-pink);
+            color: var(--dark-brown);
+        }
+        
+        .testimonial-img {
+            border: 5px solid var(--accent-pink);
+        }
+        
+        footer {
+            background-color: var(--dark-brown);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <img src="b1.png" alt="Bloomvein Pruning logo featuring stylized leaf veins" class="h-12 w-12 mr-2">
+                            <span class="font-semibold text-gray-900 text-lg">Bloomvein Pruning</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+               <a href="index.html" class="py-4 px-2 text-green-700 font-medium">Home</a>
+                    <a href="privacy.html" class="py-4 px-2 text-gray-500 font-medium hover:text-green-700">Privacy Policy</a>
+                    <a href="terms.html" class="py-4 px-2 text-gray-500 font-medium hover:text-green-700">Terms and Conditions</a>
+                    <a href="cookies.html" class="py-4 px-2 text-gray-500 font-medium hover:text-green-700">Cookie Policy</a>
+                    <a href="contact.html" class="py-4 px-2 text-gray-500 font-medium hover:text-green-700">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero py-32 text-center text-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-5xl font-bold mb-6">Bloomvein Pruning</h1>
+            <p class="text-2xl mb-8 italic">"Feed the vein. Watch it bloom."</p>
+            <a href="#services" class="bg-white text-green-800 py-3 px-6 rounded-full font-bold hover:bg-green-100 transition">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 pr-8">
+                    <img src="p1.png" alt="A gardener pruning rose bushes with precision tools in a sunny garden" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6 text-green-800">Rooted in Excellence</h2>
+                    <p class="mb-4">Bloomvein Pruning specializes in floral-focused garden care, ensuring your plants thrive from root to bloom. Our expert techniques combine aesthetic shaping with scientific precision to enhance both the health and beauty of your garden.</p>
+                    <p class="mb-4">We serve residential and commercial properties throughout New York, transforming ordinary spaces into botanical showcases.</p>
+                    <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-700">
+                        <p class="italic">"Perfect for floral-focused garden beds, aesthetic shaping, and plants that deserve to look their best."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center text-green-800">Our Pruning Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-green-50 rounded-lg overflow-hidden shadow-md service-card transition duration-300">
+                    <img src="p2.png" alt="Close-up of precision pruning shears cutting a rose stem at 45-degree angle" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-green-800">Basic Bloom Care</h3>
+                        <p class="mb-4">Seasonal maintenance including deadheading, light shaping, and health assessment.</p>
+                        <ul class="mb-4 pl-4">
+                            <li class="list-disc mb-1">Year-round maintenance</li>
+                            <li class="list-disc mb-1">Flower-focused shaping</li>
+                            <li class="list-disc mb-1">Soil evaluation</li>
+                        </ul>
+                        <div class="price-tag inline-block px-4 py-2 rounded-full font-bold">From $150/session</div>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-green-50 rounded-lg overflow-hidden shadow-md service-card transition duration-300">
+                    <img src="p3.png" alt="Hydrangea bushes being professionally shaped with shears in a garden setting" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-green-800">Vein Enhancement</h3>
+                        <p class="mb-4">Advanced techniques focusing on plant vascular systems for optimal blooming.</p>
+                        <ul class="mb-4 pl-4">
+                            <li class="list-disc mb-1">Vascular-focused pruning</li>
+                            <li class="list-disc mb-1">Nutrient distribution planning</li>
+                            <li class="list-disc mb-1">Blooming cycle optimization</li>
+                        </ul>
+                        <div class="price-tag inline-block px-4 py-2 rounded-full font-bold">From $300/session</div>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-green-50 rounded-lg overflow-hidden shadow-md service-card transition duration-300">
+                    <img src="p4.png" alt="Aesthetic garden design with flowering plants arranged in artistic patterns" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-green-800">Floral Architecture</h3>
+                        <p class="mb-4">Transformative shaping for theatrical displays and botanical artistry.</p>
+                        <ul class="mb-4 pl-4">
+                            <li class="list-disc mb-1">Artistic pruning designs</li>
+                            <li class="list-disc mb-1">Seasonal display planning</li>
+                            <li class="list-disc mb-1">Space optimization</li>
+                        </ul>
+                        <div class="price-tag inline-block px-4 py-2 rounded-full font-bold">From $450/session</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Content Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold mb-8 text-center text-green-800">The Bloomvein Approach</h2>
+            
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold mb-4 text-green-700">Understanding Plant Vascular Systems</h3>
+                <p class="mb-6">At Bloomvein Pruning, we specialize in what we call 'vascular-focused pruning' - a method that considers the entire plant system when making cuts. Much like a skilled surgeon understands the human circulatory system, our pruners study the flow of nutrients through your plants.</p>
+                
+                <div class="flex flex-col md:flex-row mb-8 gap-6">
+                    <img src="p5.png" alt="Diagram showing plant vascular system with nutrient flow highlighted" class="rounded-lg">
+                    <div>
+                        <p class="mb-4">This approach ensures that each cut is made with precision to:</p>
+                        <ul class="list-disc pl-5 mb-4">
+                            <li>Minimize stress on the plant</li>
+                            <li>Direct nutrient flow to flowering zones</li>
+                            <li>Encourage symmetrical growth patterns</li>
+                            <li>Prevent disease transmission</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h3 class="text-2xl font-bold mb-4 text-green-700">Seasonal Considerations</h3>
+                <p class="mb-4">Different plants require different approaches depending on the season:</p>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <h4 class="font-bold mb-2">Spring Pruning</h4>
+                        <p class="mb-2">Focuses on removing winter damage and shaping for the coming growth season. We pay special attention to emerging buds, ensuring optimal placement for flowering.</p>
+                    </div>
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <h4 class="font-bold mb-2">Summer Maintenance</h4>
+                        <p class="mb-2">Light shaping and deadheading to encourage continuous blooming while maintaining plant health during peak growing months.</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <h4 class="font-bold mb-2">Fall Preparation</h4>
+                        <p class="mb-2">Strategic cuts to prepare plants for dormancy while ensuring abundant blooms the following year.</p>
+                    </div>
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <h4 class="font-bold mb-2">Winter Structural Work</h4>
+                        <p class="mb-2">Major reshaping for deciduous plants, always considering next season's bloom potential.</p>
+                    </div>
+                </div>
+                
+                <h3 class="text-2xl font-bold mb-4 text-green-700">Tool Selection & Technique</h3>
+                <p class="mb-4">Our pruning philosophy is based on three decades of botanical research combined with practical field experience. We've developed proprietary methods that consider:</p>
+                <ul class="list-disc pl-5 mb-6">
+                    <li class="mb-2">Plant species-specific physiology</li>
+                    <li class="mb-2">Microclimate conditions</li>
+                    <li class="mb-2">Growth patterns and flowering cycles</li>
+                    <li class="mb-2">Local ecosystem impacts</li>
+                </ul>
+                <p class="mb-6">We maintain a complete arsenal of specialized pruning tools, each selected for specific plant types and cut requirements:</p>
+                
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white rounded-lg overflow-hidden mb-8">
+                        <thead class="bg-green-800 text-white">
+                            <tr>
+                                <th class="py-3 px-4 text-left">Tool</th>
+                                <th class="py-3 px-4 text-left">Best For</th>
+                                <th class="py-3 px-4 text-left">Cut Type</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700">
+                            <tr class="border-b border-gray-200">
+                                <td class="py-3 px-4">Japanese Razor Shears</td>
+                                <td class="py-3 px-4">Delicate flowering shrubs</td>
+                                <td class="py-3 px-4">Clean, precise 45° cuts</td>
+                            </tr>
+                            <tr class="border-b border-gray-200">
+                                <td class="py-3 px-4">Bypass Pruners</td>
+                                <td class="py-3 px-4">Medium-diameter stems</td>
+                                <td class="py-3 px-4">Live growth removal</td>
+                            </tr>
+                            <tr class="border-b border-gray-200">
+                                <td class="py-3 px-4">Grafting Knives</td>
+                                <td class="py-3 px-4">Bud propagation</td>
+                                <td class="py-3 px-4">Angled grafting cuts</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-3 px-4">Pole Pruners</td>
+                                <td class="py-3 px-4">High branches</td>
+                                <td class="py-3 px-4">Strategic thinning cuts</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <img src="p6.png" alt="Collection of professional pruning tools laid out on a wooden table" class="w-full rounded-lg mb-8">
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold mb-12 text-center text-green-800">Service Packages</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Package 1 -->
+                <div class="border border-green-200 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-4 text-center text-green-800">Bloom Basic</h3>
+                    <p class="text-center mb-6 font-bold text-3xl">$120/month</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Bi-monthly maintenance pruning</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Up to 10 shrubs/bushes</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Basic shaping</li>
+                    </ul>
+                    <button class="w-full bg-green-700 text-white py-2 px-4 rounded hover:bg-green-800 transition">Select Plan</button>
+                </div>
+                
+                <!-- Package 2 -->
+                <div class="border border-green-200 rounded-lg p-6">
+                    <div class="text-center mb-2">
+                        <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Most Popular</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center text-green-800">Vein Standard</h3>
+                    <p class="text-center mb-6 font-bold text-3xl">$250/month</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Weekly maintenance visits</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Up to 20 plants/flowers</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Vascular-focused pruning</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Aesthetic shaping</li>
+                    </ul>
+                    <button class="w-full bg-green-700 text-white py-2 px-4 rounded hover:bg-green-800 transition">Select Plan</button>
+                </div>
+                
+                <!-- Package 3 -->
+                <div class="border border-green-200 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-4 text-center text-green-800">Floral Premium</h3>
+                    <p class="text-center mb-6 font-bold text-3xl">$450/month</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Twice weekly maintenance</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Unlimited plants in area</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Artistic pruning designs</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Seasonal display planning</li>
+                    </ul>
+                    <button class="w-full bg-green-700 text-white py-2 px-4 rounded hover:bg-green-800 transition">Select Plan</button>
+                </div>
+            </div>
+            
+            <p class="text-center mt-8 text-gray-600 px-4">Custom packages available for commercial properties, special events, and seasonal installations. All plans include complimentary initial consultation and planting zone analysis. Ask about our loyalty program for returning clients - receive 10% off after 5 sessions or refer a friend for $50 credit.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center text-green-800">Our Work</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <img src="p7.png" alt="Before and after of rose bushes showing dramatic transformation after pruning" class="rounded-lg shadow-md">
+                <img src="p8.png" alt="Garden pathway lined with perfectly shaped hydrangeas undergoing maintenance" class="rounded-lg shadow-md">
+                <img src="p9.png" alt="Topiary garden with artfully shaped boxwood creating living sculptures" class="rounded-lg shadow-md">
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-green-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold mb-12 text-center text-green-800">What Our Clients Say</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/51e17daf-77eb-4bbd-bf5c-f2a6bddf4331.png" alt="Professional landscaper in work uniform" class="w-12 h-12 rounded-full testimonial-img">
+                        <div class="ml-4">
+                            <h4 class="font-bold">Michael Tanaka</h4>
+                            <p class="text-sm text-gray-600">Commercial Property Manager</p>
+                        </div>
+                    </div>
+                    <p class="italic">"Bloomvein transformed our hotel's courtyard garden into a showpiece. Their specialized pruning techniques increased our flowering plants' bloom cycles by 40% according to our landscape metrics."</p>
+                </div>
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9309a2ac-2da1-4571-aab9-cfa48deda744.png" alt="Smiling older gentleman in a gardening hat" class="w-12 h-12 rounded-full testimonial-img">
+                        <div class="ml-4">
+                            <h4 class="font-bold">Robert Henderson</h4>
+                            <p class="text-sm text-gray-600">Greenwich Village</p>
+                        </div>
+                    </div>
+                    <p class="italic">"The Bloomvein team transformed my neglected rose garden into the talk of the neighborhood. Their vascular pruning technique has doubled my blooms!"</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cba1d0e3-5c66-4d9d-a8a6-bb8ff5418cee.png" alt="Young woman holding flowers in front of a garden gate" class="w-12 h-12 rounded-full testimonial-img">
+                        <div class="ml-4">
+                            <h4 class="font-bold">Sarah Wellington</h4>
+                            <p class="text-sm text-gray-600">Chelsea</p>
+                        </div>
+                    </div>
+                    <p class="italic">"I've tried three other pruning services before finding Bloomvein. The difference in plant health and flowering is night and day. Worth every penny."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Satisfaction Guarantee -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <div class="border-4 border-green-200 rounded-lg p-8">
+                <h2 class="text-3xl font-bold mb-6 text-center text-green-800">Our Bloomvein Promise</h2>
+                <p class="mb-6 text-center">We stand behind every cut we make with our comprehensive satisfaction guarantee:</p>
+                
+                <div class="grid md:grid-cols-2 gapMatched-6 mb-8">
+                    <div class="flex items-start">
+                        <svg class="w-8 h-8 mr-4 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <div>
+                            <h3 class="font-bold mb-2">100% Satisfaction</h3>
+                            <p>If you're not completely happy with our service, we'll return to make adjustments at no additional cost.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <svg class="w-8 h-8 mr-4 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <div>
+                            <h3 class="font-bold mb-2">Damage Protection</h3>
+                            <p>We carry comprehensive insurance and guarantee any plants accidentally damaged during service will be replaced.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-bold mb-4 text-gray-800">Disclaimer</h2>
+                <p class="mb-4">While Bloomvein Pruning takes every precaution to ensure the health and beauty of your plants, we cannot guarantee specific blooming results. Plant health and flowering depend on many factors including soil conditions, weather patterns, native wildlife, and proper aftercare.</p>
+                <p class="mb-4">Our pruning techniques are designed to optimize plant health and flowering potential, but results may vary. We recommend proper watering, fertilization, and protection from extreme weather conditions to maintain your plants between our visits.</p>
+                <p class="mb-4">Bloomvein Pruning is insured for all services performed. Please notify us immediately if you notice any adverse reactions in your plants following our service.</p>
+                <p>Prices subject to change without notice. Service areas may be restricted during extreme weather conditions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Bloomvein Pruning</h3>
+                    <p class="mb-4">"Feed the vein. Watch it bloom."</p>
+                    <p>Specializing in floral-focused garden care and aesthetic shaping since 2010. Our team of master pruners combines botanical expertise with artistic vision to create stunning outdoor spaces throughout New York City. Certified by the American Society of Botanical Artists and the International Society of Arboriculture.</p>
+                    <p class="mt-2">Member of NYC Gardeners Association | Recipient of the 2022 Urban Horticulture Award</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-green-300">Home</a></li>
+                        <li><a href="#" class="hover:text-green-300">Services</a></li>
+                        <li><a href="#" class="hover:text-green-300">Pricing</a></li>
+                        <li><a href="#" class="hover:text-green-300">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <address class="not-italic">
+                        <p class="mb-2">20 Cooper Square</p>
+                        <p class="mb-2">New York, NY 10003</p>
+                        <p class="mb-4">USA</p>
+                        <p class="mb-2">Phone: (212) 555-7890</p>
+                        <p>Email: info@bloomvein.com</p>
+                    </address>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Hours</h3>
+                    <ul class="space-y-2">
+                        <li>Mon-Fri: 8am - 6pm</li>
+                        <li>Sat: 9am - 4pm</li>
+                        <li>Sun: Closed</li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="#" class="inline-block mr-2">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="inline-block mr-2">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 3.808.058h.468c2.456 0 2.784-.011 3.807-.058.975-.045 1.504-.207 1.857-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-3.808v-.468c0-2.456-.011-2.784-.058-3.807-.045-.975-.207-1.504-.344-1.857a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-green-800 mt-8 pt-8 text-center text-sm">
+                <p>© 2023 Bloomvein Pruning. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
